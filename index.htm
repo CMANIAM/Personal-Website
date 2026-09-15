@@ -4,56 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Guinther — Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 40%, #7dd3fc 100%);
+      color: #102542;
+    }
+
+    a {
+      color: #0f172a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page-wrap {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #f8fbff;
+      border: 4px solid #0f172a;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+      overflow: hidden;
+    }
+
+    .topbar {
+      background: #0f172a;
+      padding: 20px 30px 12px 30px;
+      color: #ffffff;
+    }
+
+    .topbar h1 {
+      margin: 0 0 12px 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .nav-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .nav-table td {
+      text-align: center;
+      padding: 10px 12px;
+      background: #1e3a8a;
+      border: 1px solid #93c5fd;
+    }
+
+    .nav-table a {
+      color: #ffffff;
+      font-weight: bold;
+      display: inline-block;
+      padding: 8px 14px;
+    }
+
+    .content-area {
+      padding: 25px;
+      background: #edf6ff;
+    }
+
+    .section-box {
+      background: #ffffff;
+      border: 2px solid #93c5fd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(55, 65, 81, 0.08);
+    }
+
+    .section-box h2 {
+      margin-top: 0;
+      color: #1d4ed8;
+      border-bottom: 3px solid #93c5fd;
+      padding-bottom: 8px;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .info-table td {
+      border: 1px solid #cbd5e1;
+      padding: 12px 10px;
+      vertical-align: top;
+      background: #f8fafc;
+    }
+
+    .info-table td:first-child {
+      width: 30%;
+      background: #dbeafe;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+
+    .social-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-list li {
+      margin: 12px 0;
+      padding: 12px 14px;
+      background: #eff6ff;
+      border-left: 6px solid #2563eb;
+      border-radius: 8px;
+    }
+
+    .footer {
+      background: #0f172a;
+      color: #ffffff;
+      text-align: center;
+      padding: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
- 
-  <header>
-    <h1>Noah Guinther</h1>
-    <nav>
-      <a href="index.htm">Home</a> |
-      <a href="Projects.htm">Projects</a> |
-      <a href="experince.htm">Experience</a>
-    </nav>
-  </header>
- 
-  <hr>
- 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m Noah, a sophomore Computer Science major at Pacific Lutheran University with a minor in Data Science. I 	got interested in computer science through my experiences with programming and building projects, 	especially creating my own applications, which made me want to learn more about how technology works and 	how I can use it to solve problems.
-      </p>
-      <p>
-        Right now, I’m building my programming skills through coursework in computer science and data structures 	while working on personal projects to gain more hands-on experience. I’m looking for an internship or 	project where I can apply what I’ve learned, work with a team, and continue developing my skills in 	software development, data, and technology.
-      </p>
-    </section>
- 
-    <section>
-      <h2>Quick Facts</h2>
-      <ul>
-        <li><strong>Studying:</strong> B.S. Computer Science, Pacific Lutheran University, expected 2029</li>
-        <li><strong>Languages:</strong> HTML, Java, C#, JavaScript, SQL</li>
-        <li><strong>Interested in:</strong> Distributed systems, machine learning, Data Sceince</li>
-        <li><strong>Currently:</strong> Looking for summer internships / open to collaborating on projects</li>
-      </ul>
-    </section>
- 
-    <section>
-      <h2>Find Me Elsewhere</h2>
-      <ul>
-        <li><a href="https://github.com/CMANIAM" target="_blank" rel="noopener">GitHub — @CMANIAM</a></li>
-        <li><a href="https://www.linkedin.com/in/noah-guinther-7b752037b" target="_blank" rel="noopener">LinkedIn — /in/NoahGuinther</a></li>
-        <li><a href="mailto:nguinther887@gmail.com">Email — nguinther887@gmail.com</a></li>
-      </ul>
-    </section>
-  </main>
- 
-  <hr>
- 
-  <footer>
-    <p>&copy; 2026 Noah Guinther</p>
-  </footer>
- 
+  <div class="page-wrap">
+    <header class="topbar">
+      <h1>Noah Guinther</h1>
+      <table class="nav-table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><a href="index.htm">Home</a></td>
+          <td><a href="Projects.htm">Projects</a></td>
+          <td><a href="experince.htm">Experience</a></td>
+        </tr>
+      </table>
+    </header>
+
+    <main class="content-area">
+      <section class="section-box">
+        <h2>About Me</h2>
+        <p>
+          I’m Noah, a sophomore Computer Science major at Pacific Lutheran University with a minor in Data Science. I got interested in computer science through my experiences with programming and building projects, especially creating my own applications, which made me want to learn more about how technology works and how I can use it to solve problems.
+        </p>
+        <p>
+          Right now, I’m building my programming skills through coursework in computer science and data structures while working on personal projects to gain more hands-on experience. I’m looking for an internship or project where I can apply what I’ve learned, work with a team, and continue developing my skills in software development, data, and technology.
+        </p>
+      </section>
+
+      <section class="section-box">
+        <h2>Quick Facts</h2>
+        <table class="info-table" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>Studying</td>
+            <td>B.S. Computer Science, Pacific Lutheran University, expected 2029</td>
+          </tr>
+          <tr>
+            <td>Languages</td>
+            <td>HTML, Java, C#, JavaScript, SQL</td>
+          </tr>
+          <tr>
+            <td>Interested In</td>
+            <td>Distributed systems, machine learning, Data Science</td>
+          </tr>
+          <tr>
+            <td>Currently</td>
+            <td>Looking for summer internships and open to collaborating on projects</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="section-box">
+        <h2>Find Me Elsewhere</h2>
+        <ul class="social-list">
+          <li><a href="https://github.com/CMANIAM" target="_blank" rel="noopener">GitHub — @CMANIAM</a></li>
+          <li><a href="https://www.linkedin.com/in/noah-guinther-7b752037b" target="_blank" rel="noopener">LinkedIn — /in/NoahGuinther</a></li>
+          <li><a href="mailto:nguinther887@gmail.com">Email — nguinther887@gmail.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Noah Guinther</p>
+    </footer>
+  </div>
 </body>
 </html>

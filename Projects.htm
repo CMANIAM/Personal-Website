@@ -4,74 +4,200 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Guinther — Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #7c3aed 40%, #f9a8d4 100%);
+      color: #102542;
+    }
+
+    a {
+      color: #0f172a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page-wrap {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #fdf2f8;
+      border: 4px solid #0f172a;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+      overflow: hidden;
+    }
+
+    .topbar {
+      background: #0f172a;
+      padding: 20px 30px 12px 30px;
+      color: #ffffff;
+    }
+
+    .topbar h1 {
+      margin: 0 0 12px 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .nav-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .nav-table td {
+      text-align: center;
+      padding: 10px 12px;
+      background: #7c3aed;
+      border: 1px solid #e9d5ff;
+    }
+
+    .nav-table a {
+      color: #ffffff;
+      font-weight: bold;
+      display: inline-block;
+      padding: 8px 14px;
+    }
+
+    .content-area {
+      padding: 25px;
+      background: #fff7fb;
+    }
+
+    .section-box {
+      background: #ffffff;
+      border: 2px solid #f9a8d4;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(55, 65, 81, 0.08);
+    }
+
+    .section-box h2 {
+      margin-top: 0;
+      color: #7c3aed;
+      border-bottom: 3px solid #f9a8d4;
+      padding-bottom: 8px;
+    }
+
+    .project-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .project-table td {
+      border: 1px solid #fbcfe8;
+      padding: 12px 10px;
+      vertical-align: top;
+      background: #fff;
+    }
+
+    .project-table td:first-child {
+      width: 25%;
+      font-weight: bold;
+      color: #6d28d9;
+      background: #f5e8ff;
+    }
+
+    .project-box {
+      background: #fdf2f8;
+      border: 2px solid #f9a8d4;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    .project-box h3 {
+      margin-top: 0;
+      color: #581c87;
+      background: #f3e8ff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border-left: 6px solid #a855f7;
+    }
+
+    .coming-soon {
+      background: #fef3c7;
+      border: 2px solid #fbbf24;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 20px;
+    }
+
+    .footer {
+      background: #0f172a;
+      color: #ffffff;
+      text-align: center;
+      padding: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+  <div class="page-wrap">
+    <header class="topbar">
+      <h1>Noah Guinther</h1>
+      <table class="nav-table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><a href="index.htm">Home</a></td>
+          <td><a href="Projects.htm">Projects</a></td>
+          <td><a href="experince.htm">Experience</a></td>
+        </tr>
+      </table>
+    </header>
 
-  <header>
-    <h1>Noah Guinther</h1>
-    <nav>
-      <a href="index.htm">Home</a> |
-      <a href="Projects.htm">Projects</a> |
-      <a href="experince.htm">Experience</a>
-    </nav>
-  </header>
+    <main class="content-area">
+      <section class="section-box">
+        <h2>Projects</h2>
 
-  <hr>
+        <table class="project-table" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>Project</td>
+            <td>Computer Science Club Website</td>
+          </tr>
+          <tr>
+            <td>Type</td>
+            <td>Club website / student resource site</td>
+          </tr>
+          <tr>
+            <td>Built With</td>
+            <td>HTML, JavaScript, CSS</td>
+          </tr>
+        </table>
 
-  <main>
-    <section>
-      <h2>Projects</h2>
+        <article class="project-box">
+          <h3>Computer Science Club Website</h3>
+          <p>
+            <strong>What it is:</strong> A central website for the PLU Computer Science Club that provides information about the club, including meeting times, location, activities, and contact information. It also helps showcase what students can participate in, with plans for a calendar to improve communication.
+          </p>
+          <p>
+            <strong>My role:</strong> Worked as part of a 3-person team. I wrote and edited the HTML and added the club’s information and content. I also reviewed other code written by teammates.
+          </p>
+          <p>
+            <strong>Links:</strong>
+            <a href="https://plu-cs-club.github.io/" target="_blank" rel="noopener">Computer Science Club Website</a> | 
+            <a href="https://github.com/Guuzzeji/plu-cs-club" target="_blank" rel="noopener">GitHub repo</a>
+          </p>
+        </article>
 
-      <article>
-	<!----------------------------Website project------------------------------->
+        <div class="coming-soon">
+          <h2>Coming Soon</h2>
+          <h3>Ticketly</h3>
+          <p><strong>What it is:</strong> Small business ticketing app</p>
+          <p><strong>Building with:</strong> ???</p>
+          <p><strong>Links:</strong> <a href="#" target="_blank" rel="noopener">GitHub repo</a></p>
+        </div>
+      </section>
+    </main>
 
-	<h3>Computer Sceince Club Website</h3>
-	<p>
-          <strong>What it is:</strong> A central website for the PLU Computer Science 
-	Club that provides information about the club, including meeting times, 
-	location, activities, and contact information. It also helps showcase what 
-	students can participate in, with plans for a calendar to improve communication.
-        </p>
-        <p>
-          <strong>My role:</strong> Worked as part of a 3-person team. I wrote/edited the 
-	HTML and added the club's information and content. I also reviewed other code written 
-	by teammates.
-        </p>
-        <p>
-          <strong>Built with:</strong> HTML, JavaScript, CSS
-        </p>
-        <p>
-          <strong>Links:</strong>
-          <a href="https://plu-cs-club.github.io/" target="_blank" rel="noopener">Computer Science Club Website</a>
-	  <a href="https://github.com/Guuzzeji/plu-cs-club" target="_blank" rel="noopener">GitHub repo</a>
-        </p>
-<!----------------------------Coming soon projects------------------------------->
-
-      </article>
-
-      <hr>
-	<h2>Coming Soon</h2>
-      <article>
-        <h3>Ticketly</h3>
-        <p>
-          <strong>What it is:</strong> Small buisness ticketing app
-        </p>
-        <p>
-          <strong>Building with:</strong> ???
-        </p>
-        <p>
-          <strong>Links:</strong>
-          <a href="#" target="_blank" rel="noopener">GitHub repo</a>
-        </p>
-      </article>
-    </section>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p>&copy; 2026 Noah Guinther</p>
-  </footer>
-
+    <footer class="footer">
+      <p>&copy; 2026 Noah Guinther</p>
+    </footer>
+  </div>
 </body>
 </html>
