@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Guinther — Experience</title>
   <style>
+    /* Global page styling and the cyan experience theme. */
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +22,8 @@
       text-decoration: underline;
     }
 
-    .page-wrap {
+    /* Centers the main portfolio frame on the page. */
+    .site-shell {
       width: 90%;
       max-width: 1100px;
       margin: 30px auto;
@@ -32,43 +34,47 @@
       overflow: hidden;
     }
 
-    .topbar {
+    /* Holds the name and links shared by every page. */
+    .site-header {
       background: #0f172a;
       padding: 20px 30px 12px 30px;
       color: #ffffff;
     }
 
-    .topbar h1 {
+    .site-header h1 {
       margin: 0 0 12px 0;
       font-size: 2.5em;
       letter-spacing: 1px;
     }
 
-    .nav-table {
+    /* Simple table-based navigation menu. */
+    .site-navigation {
       width: 100%;
       border-collapse: collapse;
     }
 
-    .nav-table td {
+    .site-navigation td {
       text-align: center;
       padding: 10px 12px;
       background: #1e3a8a;
       border: 1px solid #93c5fd;
     }
 
-    .nav-table a {
+    .site-navigation a {
       color: #ffffff;
       font-weight: bold;
       display: inline-block;
       padding: 8px 14px;
     }
 
-    .content-area {
+    /* Keeps page content readable inside the site frame. */
+    .main-content {
       padding: 25px;
       background: #eef6ff;
     }
 
-    .section-box {
+    /* Reusable container for the page's main content section. */
+    .content-section {
       background: #ffffff;
       border: 2px solid #93c5fd;
       border-radius: 12px;
@@ -77,34 +83,36 @@
       box-shadow: 0 6px 12px rgba(55, 65, 81, 0.08);
     }
 
-    .section-box h2 {
+    .content-section h2 {
       margin-top: 0;
       color: #1d4ed8;
       border-bottom: 3px solid #93c5fd;
       padding-bottom: 8px;
     }
 
-    .info-table {
+    /* Presents the role information as label-and-value rows. */
+    .facts-table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
     }
 
-    .info-table td {
+    .facts-table td {
       border: 1px solid #cbd5e1;
       padding: 12px 10px;
       background: #f8fafc;
       vertical-align: top;
     }
 
-    .info-table td:first-child {
+    .facts-table td:first-child {
       width: 26%;
       font-weight: bold;
       color: #1e3a8a;
       background: #dbeafe;
     }
 
-    .experience-box {
+    /* Details the experience, responsibilities, and tools used. */
+    .experience-details {
       background: #ecfeff;
       border: 2px solid #22d3ee;
       border-radius: 12px;
@@ -112,7 +120,7 @@
       margin-top: 18px;
     }
 
-    .experience-box h3 {
+    .experience-details h3 {
       margin-top: 0;
       color: #0f172a;
       background: #cffafe;
@@ -121,7 +129,8 @@
       border-left: 6px solid #0891b2;
     }
 
-    .footer {
+    /* Shared footer at the bottom of the portfolio frame. */
+    .site-footer {
       background: #0f172a;
       color: #ffffff;
       text-align: center;
@@ -131,10 +140,10 @@
   </style>
 </head>
 <body>
-  <div class="page-wrap">
-    <header class="topbar">
+  <div class="site-shell">
+    <header class="site-header">
       <h1>Noah Guinther</h1>
-      <table class="nav-table" cellpadding="0" cellspacing="0">
+      <table class="site-navigation" cellpadding="0" cellspacing="0">
         <tr>
           <td><a href="index.htm">Home</a></td>
           <td><a href="Projects.htm">Projects</a></td>
@@ -143,11 +152,11 @@
       </table>
     </header>
 
-    <main class="content-area">
-      <section class="section-box">
+    <main class="main-content">
+      <section class="content-section">
         <h2>Experience</h2>
 
-        <table class="info-table" cellpadding="0" cellspacing="0">
+        <table class="facts-table" cellpadding="0" cellspacing="0">
           <tr>
             <td>Role</td>
             <td>Data/Platform Developer</td>
@@ -162,7 +171,7 @@
           </tr>
         </table>
 
-        <article class="experience-box">
+        <article class="experience-details">
           <h3>Scoutermation</h3>
           <p>
             <strong>What it is:</strong> Scoutermation is a troop management platform designed to make it easier for scouting leaders to communicate, organize tasks, and share important information. It includes features such as chat, visual boards, and file storage, helping troops keep track of meetings, events, and resources in one place.
@@ -181,7 +190,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
       <p>&copy; 2026 Noah Guinther</p>
     </footer>
   </div>
